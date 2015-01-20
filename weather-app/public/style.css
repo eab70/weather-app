@@ -1,0 +1,26 @@
+body {
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+	
+
+#form-text {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+h1 {
+  font-size: 80px;
+  font-style: serif;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+
+
+  
