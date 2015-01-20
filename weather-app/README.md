@@ -1,2 +1,2 @@
-# weather_sinatra
-ruby weather app
+# weather-app
+ruby sinatra weather app
