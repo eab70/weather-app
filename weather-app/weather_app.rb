@@ -23,25 +23,17 @@ post '/weather' do
 
 if (@weather == 'Sunny')
         erb :sunny
-    elsif (@weather == 'Cloudy')
+    elsif (@weather == 'Cloudy' || @weather == 'Mostly Cloudy')
         erb :cloudy
-	elsif (@weather == 'Mostly Cloudy')
-		erb :cloudy
-	elsif (@weather == 'Partly Cloudy')
-		erb :pcloudy
-	elsif (@weather == 'Fair')
-		erb :fair2
-	elsif (@weather == 'Rainy')
-		erb :rainy
-	elsif (@weather == 'Rain')
-		erb :rainy
-	elsif (@weather == 'Snowy')
+    elsif (@weather == 'Partly Cloudy')
+	erb :pcloudy
+    elsif (@weather == 'Fair')
+	erb :fair2
+    elsif (@weather == 'Rainy' || @weather == 'Rain' || @weather == 'Light Rain Shower')
+	erb :rainy
+    elsif (@weather == 'Snowy' || @weather == 'Snow' || @weather == 'Light Snow')
         erb :snowy
-	elsif (@weather == 'Snow')
-		erb :snowy
-	elsif (@weather == 'Light Snow')
-		erb :snowy
-	else
+    else
         erb :noweather
     end
 end
